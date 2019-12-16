@@ -118,6 +118,6 @@ app.use(function (err, req, res, next) {
 	res.render('error');
 });
 
-mongoHandler.startConnection();
+// mongoHandler.startConnection();
 
 module.exports = app;
