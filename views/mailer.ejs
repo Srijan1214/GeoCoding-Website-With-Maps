@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form Submission</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-light">
+	<div class="jumbotron text-center">
+		<div>
+			<h1 class="display-3">Mailer</h1>
+			<p class="lead"><strong>You can enter your record in this page.</strong> You do not need to login for this.</p>
+		</div>
+	</div>
+	<!-- <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+		<!-- <div class="constainer-fluid"> -->
+			<a class="navbar-brand text-center text-white" href='#'>Mailer</a>
+		<!-- </div> -->
+	</nav> -->
+	<div class="container">
+		<form action="mailer" method="post">
+			<div class="form-group">
+				<div class="form-group">
+					<label class="radio-inline"><input type="radio" name="radios" id="r1" value="Mr.">Mr.</label>
+					<label class="radio-inline"><input type="radio" name="radios" id="r2" value="Mrs.">Mrs.</label>
+					<label class="radio-inline"><input type="radio" name="radios" id="r3" value="Ms.">Ms.</label>
+					<label class="radio-inline"><input type="radio" name="radios" id="r4" value="Dr.">Dr.</label>
+				</div>
+				<div class="form-group">
+					<label for="first_name">First Name:</label>
+					<input type="text" name="first" id="first_name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last" id="last_name" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="street">Street:</label>
+					<input type="text" name="street" id="street" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="state">State:</label>
+					<select name="state" id="state">
+						<option value="NJ">NJ</option>
+						<option value="NY">NY</option>
+						<option value="PA">PA</option>
+						<option value="CT">CT</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="zip">Zip:</label>
+					<input type="text" name="zip" id="zip" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="phone"">Phone:</label>
+					<input type=" text" name="phone" id="phone" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email" class="form-control">
+				</div>
+
+				<div class="form-group">
+					How may we contact you?
+					<input type="checkbox" name="chkbx1" id="chkbx1" value="phone">Phone
+					<input type="checkbox" name="chkbx2" id="chkbx2" value="mail">Mail
+					<input type="checkbox" name="chkbx3" id="chkbx3" value="email">Email
+					<input type="checkbox" name="chkbx4" id="chkbx4" value="any" checked>Any
+				</div>
+
+				<button type="submit" class="btn btn-primary">Send me span forever!</button>
+
+
+			</div>
+
+		</form>
+
+		<br>
+		<br>
+
+		<div class="badge badge-primary text-wrap" style="width: 6rem;"></div>
+		<a href="contacts" class="badge badge-primary text-wrap">Contacts</a>
+	</div>
+	</div>
+</body>
+
+</html>
