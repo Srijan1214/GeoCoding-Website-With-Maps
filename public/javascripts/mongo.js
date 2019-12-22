@@ -2,8 +2,8 @@ let mongodb=require('mongodb');
 var MongoClient = mongodb.MongoClient;
 const express = require('express');
 
-// var url = 'mongodb://localhost:27017/test';
-var url='mongodb+srv://sjoshi3:asdqwe123@cluster0-mspyr.mongodb.net/test?retryWrites=true&w=majority';
+var url = 'mongodb://localhost:27017/test';
+// var url='mongodb+srv://sjoshi3:asdqwe123@cluster0-mspyr.mongodb.net/test?retryWrites=true&w=majority';
 let exportObj = {};
 
 console.log(url);
